@@ -101,16 +101,6 @@ PHP/objdef/RecordSet.php -text
 PHP/objdef/SideMenu.php -text
 PHP/page4.php -text
 PHP/style.css -text
-ProjMgmt/Feedback_Sources_MZD.xls -text
-ProjMgmt/Kellogg.YJmockup.xls -text
-ProjMgmt/SQL_missing.txt -text
-ProjMgmt/SQL_todo.txt -text
-ProjMgmt/TableList.txt -text
-ProjMgmt/dr[!!-~]notes[!!-~]for[!!-~]tasks.txt -text
-ProjMgmt/meeting.20060224.txt -text
-ProjMgmt/meeting.20060317.txt -text
-ProjMgmt/meeting.20060403.txt -text
-ProjMgmt/todo[!!-~]dsr.txt -text
 SQL/CREATE.Table.ETL.StateAbbrev.sql -text
 SQL/CREATE.Table.glsColumnLabels.sql -text
 SQL/CREATE.Table.glsMenuItems.sql -text
