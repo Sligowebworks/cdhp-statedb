@@ -1,0 +1,81 @@
+
+*** CDHP State DB Object descriptions ***
+~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~
+
+&&& DisplayContainer Object &&&
+Responsibility: Instantiate and coordinate Chart objects.  Directs execution and passes application state. 
+
+Has:
+ * State abbreviation string
+ * MenuItemKey
+ * application state array
+
+ * collection of chart objects
+
+Does:
+ * 
+
+
+
+&&& Chart Object &&&
+Responsibility: Respond to Display object events to: retrieve chart data; show chart, chart heading, chart footer.  
+
+new Chart(&ChartLookAndFeel) // takes a reference to a look and feel object
+
+Has:
+ * RecordSet ColumnHeadings
+ * RecordSet Data
+ * RecordSet Sources
+ * ChartLookAndFeel
+
+Does:
+
+Exposes:
+
+
+
+&&& ChartLookAndFeel Object &&&
+Responsibility:
+ repository for all display snipits
+
+Has:
+
+Does:
+
+Exposes:
+
+
+Exposes:
+ * get_/set_TableTag
+ * get_/set_TableCSS
+ * get_/set_RowTag
+ * get_/set_RowTagCSS
+ * get_/set_CellTag
+ * get_/set_cellCSS
+
+
+&&& RecordSet Object &&&
+Responsibility:
+ executes a SQL statement and facilitates acces to result set.
+
+new RecordsetObject($db) // takes an odbc connection as constructor argument
+
+Does:
+ * executeSQL()
+ * printNames() // outputs a string of field names using NamePrefix and NameSuffix to delimit
+ * printRowCells() // outputs a string all fields using CellPrefix and cellSuffix to delimit
+ * first() // reset record cursor
+
+Exposes:
+ * fieldCount()
+ * rowCount()
+ * get_/set_Db()
+ * get_/set_SQL()
+ * get_/set_NamePrefix()
+ * get_/set_NameSuffix()
+ * get_/set_CellPrefix()
+ * get_/set_CellSuffix()
+ * getArrNames()
+ * getArrRow() // array of the current record; increments cursor
+
+

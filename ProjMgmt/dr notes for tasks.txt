@@ -1,0 +1,27 @@
+style sheets for cdhpstate
+
+chartlookandfeel
+menulookandfeel
+
+block level elements: div, td, p have boxes, are structural. border, margin, padding - specify those. explicit for browser compatibility
+
+non-block level: tr - no representation on screen
+
+31401/page1.php
+
+Page1.php includes testing.php. 
+
+Rename testing.php to application.php
+do page writeout
+
+select pagename from glsmenuitems
+
+spit out a file for each pagenames with require('application.php')
+
+There is 
+
+http://www.htmlhelp.com/
+
+When drawing charts: start fresh
+
+app_setup.php: where the globals are. Debug vars set to false . . .but you can get debug info.

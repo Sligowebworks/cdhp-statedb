@@ -1,0 +1,22 @@
+glsMenuSections
+tblCharts
+glsMenuItems
+glsColumnLabels
+StateAbbrev
+tblCharts_BU_20060224
+
+tblOfContents
+
+[Demographics], [Demographics]
+[Workforceus], [Workeforce US]
+[Workforce], [Workforce]
+[permitfunc], [PERMIT FUNC]
+[medischip], [Medicade SCHIP]
+[medischip3],
+[Safetynetpubhealth],
+[ProcStatTrans],
+[au],
+[AUspecial],
+[insurance],
+[Inscovtotal],
+[inscov18under],

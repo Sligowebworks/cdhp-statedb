@@ -1,0 +1,291 @@
+/* These are the redefined HTML tags, in the order they appear in Page5.php */
+body, table, td, tr, div, img {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+img {
+	border: 1px solid #000;
+	margin: 4px;
+}
+
+
+/* These are the DIVs that need to be styled, in the order they appear in Page5.php */
+#BannerWrap {
+	height: 105px;
+	width: 100%;
+	background-color: #EEE;
+	border-bottom: 1px solid #000;
+}
+#TopLogo {
+	float: left;
+	margin-right: 10px;
+}
+#TopMenuWrapCSS {
+	display: block;
+	clear: left;
+	background-color: #5B97B1;
+	width: 100%;
+	height: 28px;
+	overflow: hidden;
+}
+#StateForm {
+	float: left;
+	width: 200px;
+	height: 30px;
+	padding: 2px 4px 2px 4px;
+}
+#StateForm form {
+	margin-bottom: 0px;
+}
+#Banner {
+	margin: 0px;
+	padding: 10px;
+}
+#TopLinks {
+	width: 100%;
+	background-color: #5B97B1;
+}
+#LowerWrap {
+	clear: left;
+	border-top: 1px solid #000;
+}
+#MenuWrap {
+	width: 200px;
+	float: left;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+#ContentWrapper {
+	width: 100%;
+	margin-left: 210px;
+}
+.SectionWrap {
+	background-color: #5B97B1;
+}
+.ItemWrap {
+	background-color: #C0D4CD;
+}
+.ChartWrapper {
+	margin: 10px 0px 10px 0px;
+}
+.Table {
+	border: 1px solid #CCC;
+}
+#SourceWrapper {
+}
+
+/* These are the text and table styles */
+
+.BannerTitle1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #000000;
+}
+#Banner p {
+	line-height: 200%;
+}
+.BannerTitle2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+.HorzDiv {
+	float: right;
+	border-left: 1px solid #111;
+	display: block;
+	width: 200px;
+	height: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: center;
+}
+a.HorzDiv:link {
+	display: block;
+	color: #000;
+	background-color: #5B97B1;
+}
+a.HorzDiv:visited {
+	display: block;
+	color: #000;
+	background-color: #5B97B1;
+}
+a.HorzDiv:hover {
+	display: block;
+	color: #000;
+	background-color: #9EC7D8;
+}
+a.HorzDiv:active {
+	display: block;
+	color: #000;
+	background-color: #9EC7D8;
+}
+.SectionLink {
+	display: block;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 4px;
+	font-weight: bold;
+}
+a.SectionLink:link {
+	display: block;
+	color: #000;
+	background-color: #5B97B1;
+	padding-left: 23px;
+	text-indent: -20px;
+	border: 1px solid #5B97B1;
+}
+a.SectionLink:visited {
+	display: block;
+	color: #000;
+	background-color: #5B97B1;
+	padding-left: 23px;
+	text-indent: -20px;
+	border: 1px solid #5B97B1;
+}
+a.SectionLink:hover {
+	display: block;
+	color: #000;
+	background-color: #9EC7D8;
+	padding-left: 23px;
+	text-indent: -20px;
+	border: 1px solid #111;
+}
+a.SectionLink:active {
+	display: block;
+	color: #000;
+	background-color: #9EC7D8;
+	padding-left: 23px;
+	text-indent: -20px;
+	border: 1px solid #111;
+}
+a.ItemLink {
+	display: block;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 1px;
+}
+a.ItemLink:link {
+	display: block;
+	color: #000;
+	background-color: #C0D4CD;
+	padding-left: 44px;
+	text-indent: -20px;
+	border: 1px solid #C0D4CD;
+}
+a.ItemLink:visited {
+	display: block;
+	color: #000;
+	background-color: #C0D4CD;
+	padding-left: 44px;
+	text-indent: -20px;
+	border: 1px solid #C0D4CD;
+}
+a.ItemLink:hover {
+	display: block;
+	color: #000;
+	background-color: #DBE9E4;
+	padding-left: 44px;
+	text-indent: -20px;
+	border: 1px solid #111;
+}
+a.ItemLink:active {
+	display: block;
+	color: #000;
+	background-color: #DBE9E4;
+	padding-left: 44px;
+	text-indent: -20px;
+	border: 1px solid #111;
+}
+.HotSectionWrap {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	background-color: #9EC7D8;
+	padding: 3px;
+	padding-left: 44px;
+	text-indent: -40px;
+	border: 1px solid #111;
+}
+.HotItemWrap {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background-color: #DBE9E4;
+	padding: 3px;
+	padding-left: 44px;
+	text-indent: -20px;
+	border: 1px solid #111;
+}
+.ContentHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #CA4B21;
+	padding-top: 10px;
+	border-bottom: 1px solid #CCC;
+}
+.ChartTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #CA4B21;
+}
+.ChartHeader .ChartData {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #EEE;
+	padding-right: 10px;
+	padding-left: 2px;
+}
+.ChartRow {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.ChartData {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding-right: 10px;
+}
+.ChartRow .ChartData {
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #EEE;
+	border-left: 1px solid #EEE;
+	
+}
+.Sources {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000;
+}
+sup a {
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #5B97B1;
+}
+sup a:link {
+}
+sup a:visited {
+}
+sup a:hover {
+	background-color: #DBE9E4;
+}
+sup a:active {
+	background-color: #DBE9E4;
+}
