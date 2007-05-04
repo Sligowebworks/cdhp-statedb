@@ -1,2 +1,0 @@
-year	nonhispwhden	blackden	hispden	asianden	indianden	femalehyg	nonhispwhitehyg	blackhyg	hisphyg	asianhyg	indianhyg	femaleasst	nonhispwhiteasst	blackasst	hispasst	asianasst	indianasst
-1999	89	2	4	5	0	99.1	95	3	1	0	0	96.1	79	7	10	4	0
