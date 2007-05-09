@@ -7,6 +7,8 @@
 	return sprintf($link, $href, $label);
 }
 //~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,
+	
+//~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,
  	 function CSSTable($arr, $CSS)
 	 {
 	 	/**
