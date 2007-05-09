@@ -72,7 +72,7 @@
 		$textColor = "000000";
 		$waterTextColor = "FFFFFF";
 		$stateResultsPage = "Page3.php%3Fshowtype%3D$showtype%26state%3D";
-		$flashURL = "../usmapreg.swf";
+		$flashURL = "../objdef/usmapreg.swf";
 		$flashVars = 		"bc=".$stateBaseColor."&ac=".$stateActiveButtonColor."&rc=".$stateRolloverColor."&wc=".$waterColor."&t=".$textColor."&wt=".$waterTextColor."&r=".$stateResultsPage."&s=".$stateList;
 		echo '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'; 		
 		echo 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"';
