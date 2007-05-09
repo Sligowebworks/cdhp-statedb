@@ -22,8 +22,8 @@
  	private $arr_view_names;
  	private $num_views;
  	public $num_charts; //for debug
- 	
- 	private $rs_state_select_list;
+ 	private $state_list;
+	private $rs_state_select_list;
  	
  	public function DoIt()
  	{
@@ -47,7 +47,7 @@
  		return  $this->DisplayCharts();;
  		
  	}
- 	private function DisplayStates()
+	function DisplayStates()
  	{
  		$this->rs_state_select_list = new RecordSet();
 		
@@ -56,13 +56,62 @@
 		$this->rs_state_select_list->SetSQL($query);
 		$this->rs_state_select_list->SetDataConnection($this->db);
 		$this->rs_state_select_list->Populate();
-		
+		$i=0;
+		for($i=0;$i<5;$i++)
+		{	
+		   echo("<br>");
+		}
+				/*--------------------------------------------------------------------------------------------------------*/
+		$showtype = '';
+		$stateList = 'AL-AK-AS-AZ-AR-CA-CO-CT-DE-DC-FL-GA-GU-HI-ID-IL-IN-IA-KS-KY-LA-ME-MD-MH-MA-MI-FM-MN-MS-MO'.
+		'-MT-NE-NV-NH-NJ-NM-NY-NC-ND-MP-OH-OK-OR-PA-PR-RI-SC-SD-TN-TX-UT-VT-VA-VI-WA-WV-WI-WY-';
+		$stateBaseColor = "FFFFFF";
+		$stateActiveButtonColor = "E7BE7B";
+		$stateRolloverColor = "C38E00";
+		$waterColor = "0A57C1";
+		$textColor = "000000";
+		$waterTextColor = "FFFFFF";
+		$stateResultsPage = "Page3.php%3Fshowtype%3D$showtype%26state%3D";
+		$flashURL = "../usmapreg.swf";
+		$flashVars = 		"bc=".$stateBaseColor."&ac=".$stateActiveButtonColor."&rc=".$stateRolloverColor."&wc=".$waterColor."&t=".$textColor."&wt=".$waterTextColor."&r=".$stateResultsPage."&s=".$stateList;
+		echo '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"'; 		
+		echo 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"';
+		echo 'width="505" height="323">';
+		echo '<param name="WMode" value="Transparent">'; 
+  		echo '<param name="movie" value="'.$flashURL.'">';
+  		echo '<param name="FlashVars" value="'.$flashVars.'"> ';
+  		echo '<param name="quality" value="high">';
+  		echo '<embed src="'.$flashURL.'" FlashVars="'.$flashVars.'" quality="high"'; 
+		echo 'pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"'; 				echo 'width="505" height="323"';
+ 		echo 'wmode="transparent"></embed></object>';
+								/*--------------------------------------------------------------------------------------------------------*/
+		echo("<p>");
+		$counter=0;
 		foreach ($this->rs_state_select_list->arr_rows as $key => $state)
 		{	
-			echo Linkify('page3.php?state='. $state['State'], $state['Long']);
-			echo "<br>";
+			//echo Linkify('page3.php?state='. $state['State'], $state['Long']);
+			//echo "<br>";
+			$state_list[$counter]=Linkify('page3.php?state='. $state['State'], $state['Long']);
+			$counter++;
 		}
+		
+		echo '<table border="0" cellpadding="10px" cellspacing="5px">';
+		echo '<tr><td>'.$state_list[0].'</td></tr>';
+		for($row=1;$row<=10;$row++)
+		{
+			echo '<tr>';
+			for($column=1;$column<=5;$column++)
+			{
+				$startpoint=$row+(10*($column-1));
+				echo '<td>&nbsp;'.$state_list[$startpoint].'&nbsp;</td>';
+				//echo '<td>'.$startpoint.'</td>';
+			}	
+			echo '</tr>';
+		}
+		echo '</table>';
+		echo '<p>';
  	}
+ 	
  	private function DisplayCharts()
  	{
  		foreach($this->arr_charts as $index => $chart)

@@ -50,6 +50,7 @@ PHP/objdef/DisplayContainer.php -text
 PHP/objdef/MenuLookAndFeel.php -text
 PHP/objdef/RecordSet.php -text
 PHP/objdef/SideMenu.php -text
+PHP/objdef/usmapreg.swf -text
 PHP/page4.php -text
 PHP/style.css -text
 SQL/CREATE.Table.ETL.StateAbbrev.sql -text
