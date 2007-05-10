@@ -1,9 +1,15 @@
-<?
-session_start();
+<?php
 error_reporting(E_STRICT);
 error_reporting(E_ALL);
 
-//phpinfo();
+if (strpos(ini_get('include_path'), ';') != false)	{
+	define('PATH_LIST_DELIM', ';');
+} else {
+	define('PATH_LIST_DELIM', ':');
+}
+ini_set('include_path', ini_get('include_path') . PATH_LIST_DELIM . '/objdef' );
+//session_start();
+
 global $debug;
 $debug = 0;
 global $gQS;
@@ -32,7 +38,17 @@ function __autoload($class_name)
 
 global $db;
 if (!$db){
-	$db = odbc_connect('DRIVER={SQL Server};SERVER=INFERNO2;DATABASE=CDHPState', 'CDHPState', 'BrushaBrusha');
+	switch ('WINTERMUTE')	{
+	case 'INFERNO2':
+		$db = odbc_connect('DRIVER={SQL Server};SERVER=INFERNO2;DATABASE=CDHPState', 'CDHPState', 'BrushaBrusha');
+		break;
+	case 'WINTERMUTE':
+		$db = odbc_connect('DRIVER={SQL Server};SERVER=INFERNO2;DATABASE=CDHPState', 'CDHPState', 'BrushaBrusha');
+		break;
+	default:
+		$db = odbc_connect('DRIVER={SQL Server};SERVER=local;DATABASE=CDHPState', 'CDHPState', 'BrushaBrusha');
+		break;
+	}
 }
 
 $app = new AppState();

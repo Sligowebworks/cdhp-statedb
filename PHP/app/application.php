@@ -23,19 +23,19 @@ $menu->Ready();
 <html>
 <head>
 	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
-	<title>CDHP SOS :: <? echo $arr['Title'] ?></title>
+	<title>CDHP SOS :: <?php echo $arr['Title'] ?></title>
 </head>
 
 <body>
 
-		<? $menu->RenderTopBanner() ?>
+		<?php $menu->RenderTopBanner() ?>
 
 
 <div id="LowerWrap">
-		<? $menu->RenderSide() ?>
+		<?php $menu->RenderSide() ?>
 		
 	<div id="ContentWrapper"> 
-			<? 
+			<?php
 			
 			if ($arr['PageName'] == 'About')
 			{

@@ -1,4 +1,4 @@
-<?
+<?php
  // FUNCTIONS:
   /*--Display Utility Functions*/
   function Linkify($href, $label)
@@ -6,8 +6,6 @@
 	$link = '<a href="%s">%s</a>' ;
 	return sprintf($link, $href, $label);
 }
-//~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,
-	
 //~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,~`~,
  	 function CSSTable($arr, $CSS)
 	 {

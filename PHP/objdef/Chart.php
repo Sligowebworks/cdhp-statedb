@@ -108,10 +108,21 @@
  		{
  			$id = ++Chart::$footnoteID;
  			$anchor = '<a ID="' .$id . '"></a>';
+ 			
+ 			if ($this->rs_columns->arr_rows[$i]['ColSourceHref'] == 'http://datasource.ext' )
+ 			{
+ 				$link = $this->rs_columns->arr_rows[$i]['ColSourceLabel'];
+ 			} else { 			
+	 			$link = Linkify(
+	 				$this->rs_columns->arr_rows[$i]['ColSourceHref'] . '" target="_blank'
+	 				, $this->rs_columns->arr_rows[$i]['ColSourceLabel']
+	 				);
+	 		}
+ 			
  			$arr = array();
  			$arr[] = 
  			array($anchor . " [$id] ", 
- 				$this->rs_columns->arr_rows[$i]['ColSourceLabel']
+ 				$link
  				);
  			
  			WrapInCSS($arr, $sources_style, 'DIV');
