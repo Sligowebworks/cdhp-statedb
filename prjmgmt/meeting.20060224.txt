@@ -1,0 +1,16 @@
+
+
+put data sources at bottom of all charts
+link name is specific reference, href is to host
+use footnote style links on data columns
+
+disclaimer for data sources
+
+MA
+
+YJ to email disclaimer
+
+display data columns as rows
+
+first entry to site: don't default to US, display description screen. Clicking on Logo shows same.
+After selecting state show secondary splash with instructions to select a category and page.

@@ -220,3 +220,13 @@ data/tblcharts.Demographics.csv -text
 data/tblcharts.workforce.csv -text
 data/titles_ADHA.xls -text
 data/titles_demograph.xls -text
+prjmgmt/Feedback_Sources_MZD.xls -text
+prjmgmt/Kellogg.YJmockup.xls -text
+prjmgmt/SQL_missing.txt -text
+prjmgmt/SQL_todo.txt -text
+prjmgmt/TableList.txt -text
+prjmgmt/dr[!!-~]notes[!!-~]for[!!-~]tasks.txt -text
+prjmgmt/meeting.20060224.txt -text
+prjmgmt/meeting.20060317.txt -text
+prjmgmt/meeting.20060403.txt -text
+prjmgmt/todo[!!-~]dsr.txt -text

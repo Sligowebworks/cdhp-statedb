@@ -1,0 +1,25 @@
+The field, MenuItemKey, in tblCharts needs to be populated.  Several 
+Charts will be assigned to each menu item key.  You can use the 
+tblOfContentsChartName to make a good guess about which charts belong on 
+a page.
+
+You may want to start by getting glsMenuItems in order first.
+I assigned page names to each of the items, but they are not in order 
+that they appear on the page.
+The sort field is not populated in glsMenuItems.
+Note that the sort is within a MenuSection, which is already assigned to 
+each menu item.
+
+If you want, you can rename the page names.
+
+SELECT * FROM glsColumnLabels WHERE ViewName = 'insuranceChartA1': 
+
+1. MUST Populate glscolumnlabels first
+	- viewname is in tblcharts as sqlview
+
+Liam is chipping away on populating tblCharts and creating views
+
+
+Source, sources, classdata, classtitle
+
+Menusort: glsMenuItems sort can be populated - within each section
